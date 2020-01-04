@@ -97,11 +97,11 @@ block_4B = [
 %%
 
 %1X1 Convolution with stride of 2 for Skip connection layer
-connect1 = convolution2dLayer(1,16,'Padding','same','Stride',2, 'Name','skipconv_1');
+connect1 = convolution2dLayer(1,32,'Padding','same','Stride',2, 'Name','skipconv_1');
 
-connect2 = convolution2dLayer(1,32,'Padding','same','Stride',2, 'Name','skipconv_2');
+connect2 = convolution2dLayer(1,64,'Padding','same','Stride',2, 'Name','skipconv_2');
 
-connect3 = convolution2dLayer(1,64,'Padding','same','Stride',2, 'Name','skipconv_3');
+connect3 = convolution2dLayer(1,128,'Padding','same','Stride',2, 'Name','skipconv_3');
 
 %%
 %output layer definition
